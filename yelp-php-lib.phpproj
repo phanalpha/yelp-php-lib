@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>yelp-php-lib</Name>
+    <ProjectGuid>{1601ec22-9716-4538-a8a3-ce11ec47eda4}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\Bounds.php" />
+    <Compile Include="src\Business.php" />
+    <Compile Include="src\Category.php" />
+    <Compile Include="src\Client.php" />
+    <Compile Include=".gitignore" />
+    <Compile Include="composer.json" />
+    <Compile Include="composer.lock" />
+    <Compile Include="src\Coordinate.php" />
+    <Compile Include="src\GeographicCoordinate.php" />
+    <Compile Include="src\Location.php" />
+    <Compile Include="src\Region.php" />
+    <Compile Include="src\SearchResponse.php" />
+    <Compile Include="src\SearchParams.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src" />
+  </ItemGroup>
+</Project>
