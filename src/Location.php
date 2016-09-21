@@ -56,7 +56,7 @@ class Location
                              $document->display_address,
                              $document->city,
                              $document->state_code,
-                             $document->postal_code,
+                             @$document->postal_code,
                              $document->country_code,
                              @$document->cross_streets,
                              @$document->neighborhoods,

@@ -101,7 +101,7 @@ class Business
                              $document->is_claimed,
                              $document->is_closed,
                              $document->name,
-                             $document->image_url,
+                             @$document->image_url,
                              $document->url,
                              $document->mobile_url,
                              @$document->phone,
